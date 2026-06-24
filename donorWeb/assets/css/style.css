@@ -1,0 +1,49 @@
+body{
+    background:#f8fafc;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.card{
+    border:none;
+    border-radius:20px;
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.08);
+}
+
+.card-header{
+    border-radius:
+    20px 20px 0 0 !important;
+}
+
+.btn-danger{
+    border-radius:12px;
+}
+
+.table{
+    vertical-align:middle;
+}
+
+.footer{
+    background:#111827;
+    color:white;
+    margin-top:60px;
+    padding:30px;
+    text-align:center;
+}
+
+.hero{
+    min-height:80vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    font-weight:700;
+}
+
+.hero p{
+    color:#6b7280;
+}
