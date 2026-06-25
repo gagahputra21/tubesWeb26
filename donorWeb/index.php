@@ -7,7 +7,7 @@ include 'includes/koneksi.php';
 if (!isset($conn) && isset($koneksi)) {
     $conn = $koneksi;
 }
-if (!isset($_SESSION['pengguna_nik'])) { header("location:log in.php"); exit; } include 'includes/header.php'; ?>
+if (!isset($_SESSION['pengguna_nik'])) { header("location:login.php"); exit; } include 'includes/header.php'; ?>
 
 <div class="container py-4">
 

@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require_once 'koneksi.php';
+require_once 'includes/koneksi.php';
 
 if(!isset($conn)){
     die('Database connection not established.');
@@ -55,7 +55,7 @@ if(isset($_POST['input'])){
     }
 }
 
-include 'header.php';
+include 'includes/header.php';
 ?>
 
 <div class="container py-5">
@@ -134,4 +134,4 @@ Simpan
 </div>
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

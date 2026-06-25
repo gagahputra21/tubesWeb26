@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'koneksi.php';
+include 'includes/koneksi.php';
 
 if (!isset($conn) && isset($koneksi)) {
     $conn = $koneksi;
@@ -43,7 +43,7 @@ if(isset($_POST['submit'])){
     }
 }
 
-include 'header.php';
+include 'includes/header.php';
 ?>
 
 <div class="container py-5">
@@ -98,4 +98,4 @@ Kirim
 </div>
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

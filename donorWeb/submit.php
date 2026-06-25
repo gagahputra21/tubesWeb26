@@ -1,6 +1,6 @@
 <?php
 
-include 'koneksi.php';
+include 'includes/koneksi.php';
 if (!isset($conn) && isset($koneksi)) {
     $conn = $koneksi;
 }
@@ -54,7 +54,7 @@ $success=mysqli_query(
     $sql
 );
 
-include 'header.php';
+include 'includes/header.php';
 ?>
 
 <div class="container py-5">
@@ -108,4 +108,4 @@ Kembali ke Home
 
 </div>
 
-<?php include 'footer.php'; ?>
+<?php include 'includes/footer.php'; ?>

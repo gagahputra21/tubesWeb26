@@ -1,4 +1,4 @@
-<?php session_start(); require_once __DIR__ . '/includes/koneksi.php'; if(!isset($conn)){ die('Database connection not established.'); } if(!isset($_SESSION['pengguna_nik'])){ header("Location: log in.php"); exit; } $nik=$_SESSION['pengguna_nik']; $query=mysqli_query( $conn, "SELECT * FROM pengguna WHERE nik='$nik'" ); $row=mysqli_fetch_array($query); if(isset($_POST['edit'])){ $kota=$_POST['kota']; $telfon=$_POST['telfon']; $email=$_POST['email']; $status= isset($_POST['status']) ? $_POST['status'] : $row['status']; mysqli_query( $conn, "UPDATE pengguna SET kota='$kota', telfon='$telfon', email='$email', status='$status' WHERE nik='$nik'" ); header("Location: profil.php"); exit; } include 'includes/header.php'; ?>
+<?php session_start(); require_once __DIR__ . '/includes/koneksi.php'; if(!isset($conn)){ die('Database connection not established.'); } if(!isset($_SESSION['pengguna_nik'])){ header("Location: login.php"); exit; } $nik=$_SESSION['pengguna_nik']; $query=mysqli_query( $conn, "SELECT * FROM pengguna WHERE nik='$nik'" ); $row=mysqli_fetch_array($query); if(isset($_POST['edit'])){ $kota=$_POST['kota']; $telfon=$_POST['telfon']; $email=$_POST['email']; $status= isset($_POST['status']) ? $_POST['status'] : $row['status']; mysqli_query( $conn, "UPDATE pengguna SET kota='$kota', telfon='$telfon', email='$email', status='$status' WHERE nik='$nik'" ); header("Location: profil.php"); exit; } include 'includes/header.php'; ?>
 
 <div class="container py-4">
 
@@ -82,4 +82,4 @@ Kembali
 
 </div>
 
-<!-- <?php include 'footer.php'; ?> -->
+<!-- <?php include 'includes/footer.php'; ?> -->
