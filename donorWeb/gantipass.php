@@ -8,7 +8,7 @@ if(!isset($conn)){
 }
 
 if(!isset($_SESSION['pengguna_nik'])){
-    header("Location: log in.php");
+    header("Location: login.php");
     exit;
 }
 
