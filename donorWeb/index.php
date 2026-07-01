@@ -83,7 +83,7 @@ if (isset($_POST['goldar'])) {
 
 </table>
 
-<a href="data lengkap.php" class="btn btn-outline-danger">
+<a href="stockLengkap.php" class="btn btn-outline-danger">
 
 Data Pendonor Lengkap
 
